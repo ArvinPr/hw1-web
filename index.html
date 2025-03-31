@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه گر فرمول ها</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>محاسبه گر فرمول ها</h1>
+        
+        <div class="form-group">
+            <label for="price">قیمت (تومان):</label>
+            <input type="number" id="price" placeholder="مثال: 10000">
+        </div>
+        
+        <div class="form-group">
+            <label for="quantity">تعداد:</label>
+            <input type="number" id="quantity" placeholder="مثال: 2">
+        </div>
+        
+        <div class="form-group">
+            <label for="discount">تخفیف (تومان):</label>
+            <input type="number" id="discount" placeholder="مثال: 5000">
+        </div>
+        
+        <div class="result">
+            <p>مبلغ کل: <formula evaluator="price*quantity" readonly></formula></p>
+            <p>مبلغ با تخفیف: <formula evaluator="price*quantity-discount" readonly></formula></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
